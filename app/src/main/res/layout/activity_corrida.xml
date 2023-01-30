@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.CorridaActivity">
+
+        <include layout="@layout/content_passageiro"/>
+
+        <Button
+            android:id="@+id/btn_aceitar_corrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|center"
+            android:text="Aceitar Corrida"/>
+
+        <ImageView
+            android:id="@+id/fab_rota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rota"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/box_white"
+            android:backgroundTint="@color/teal_700"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_usuario_uber"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/person"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
